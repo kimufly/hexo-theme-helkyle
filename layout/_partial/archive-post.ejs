@@ -2,7 +2,10 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'MMM D'}) %>
-      <%- partial('post/title', {class_name: 'archive-article-title'}) %>
+      <% partial('post/title', {class_name: 'archive-article-title'}) %>
+      <h3 itemprop="name">
+	    <a class="archive-article-title" href="<%- url_for(post.link) %>" target="_blank" itemprop="url"><%= post.title %></a>
+	  </h3>
     </header>
   </div>
 </article>
