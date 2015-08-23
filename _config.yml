@@ -14,4 +14,11 @@ favicon: /favicon.ico
 
 version: 0.0.1
 
-banner-url: https://images.unsplash.com/photo-1425036458755-dc303a604201?q=80&fm=jpg&s=2d744e94ed28d0ec3a72ed56f67df21b
+# Duoshuo 
+duoshuo :
+	shortname: helkyle
+	share: 
+		weixin
+		weibo
+
+banner-url: 'https://images.unsplash.com/photo-1425036458755-dc303a604201?q=80&fm=jpg&s=2d744e94ed28d0ec3a72ed56f67df21b'
