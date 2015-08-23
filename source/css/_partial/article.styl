@@ -141,19 +141,19 @@
       margin-top: 0
 
 .article-more-link a
-  display: inline-block
-  line-height: 1em
-  padding: 6px 15px
-  border-radius: 15px
-  background: color-background
-  color: color-grey
-  text-shadow: 0 1px #fff
-  text-decoration: none
-  &:hover
-    background: color-link
-    color: #fff
-    text-decoration: none
-    text-shadow: 0 1px darken(color-link, 20%)
+  // display: inline-block
+  // line-height: 1em
+  // padding: 6px 15px
+  // border-radius: 15px
+  // background: color-background
+  // color: color-grey
+  // text-shadow: 0 1px #fff
+  // text-decoration: none
+  // &:hover
+  //   background: color-link
+  //   color: #fff
+  //   text-decoration: none
+  //   text-shadow: 0 1px darken(color-link, 20%)
 
 .article-footer
   clearfix()
@@ -173,8 +173,19 @@
   margin-right: 10px
 
 .article-tag-list-link
-  &:before
-    content: "#"
+    background-color: rgba(0,0,0,0.05)
+    display: inline-block
+    border-radius: .3em;
+    display: inline-block;
+    margin: 0 .1em .4em;
+    padding: .2em .7em;
+    text-decoration: none
+    font-weight: 200
+    &:hover 
+       background-color: #e4f0f6 !important
+       color: color-tag-hover !important
+//   &:before
+//     content: "#"
 
 .article-comment-link
   float: right

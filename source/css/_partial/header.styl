@@ -2,6 +2,10 @@
   height: banner-height
   position: relative
   border-bottom: 1px solid color-border
+  @media mq-tablet
+    height: banner-height + 100
+  @media mq-normal 
+    height: banner-height + 200
   &:before, &:after
     content: ""
     position: absolute
