@@ -12,27 +12,44 @@
 
 .archives
   column-gap: 10px
-  // @media mq-tablet
-  //   column-count: 2
-  // @media mq-normal
-  //   column-count: 3
+  @media mq-tablet
+    column-count: 2
+  @media mq-normal
+    column-count: 3
 
 .archive-article
   avoid-column-break()
 
-.archive-article-inner
-  @extend $block
-  padding: 10px
-  margin-bottom: 15px
-
 .archive-article-title
+  font-size: 1.2rem
+  font-weight: 300
+  margin-bottom: 0
   text-decoration: none
-  font-weight: bold
   color: color-default
   transition: color 0.2s
   line-height: line-height
   &:hover
     color: color-link
+    
+  @media mq-tablet
+    font-size: 1.4rem
+  @media mq-normal
+    font-size: 1.6rem
+.archive-article-inner
+  @extend $block
+  padding: 10px 10px
+  border: 1px solid color-grey
+  border-radius: 5px
+  margin-bottom: 15px
+
+// .archive-article-title
+//   text-decoration: none
+//   font-weight: 300
+//   color: color-default
+//   transition: color 0.2s
+//   line-height: line-height
+//   &:hover
+//     color: color-link
 
 .archive-article-footer
   margin-top: 1em

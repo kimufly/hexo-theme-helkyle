@@ -129,6 +129,10 @@
     stopMobileNavAnim();
   });
 
+  $('#mobile-nav').on('click', function(){
+    $container.toggleClass('mobile-nav-on');
+  });
+
   $('#wrap').on('click', function(){
     if (isMobileNavAnim || !$container.hasClass('mobile-nav-on')) return;
 

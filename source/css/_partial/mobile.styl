@@ -3,10 +3,20 @@
     position: absolute
     top: 0
     left: 0
+    z-index: 10
     width: mobile-nav-width
     height: 100%
     background: color-mobile-nav-background
     border-right: 1px solid #fff
+    display: none
+    box-sizing: border-box;
+  .mobile-nav-on 
+      #mobile-nav
+          min-height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
 
 @media mq-mobile
   .mobile-nav-link
