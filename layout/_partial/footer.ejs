@@ -4,8 +4,8 @@
   <% } %>
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      &copy;<%- config.author + "'s blog " %><%= date(new Date(), 'YYYY') %> • All rights reserved.<br>
+      Published with <a href="http://hexo.io/" target="_blank">Hexo</a> Theme by <a href="https://github.com/HelKyle/hexo-theme-helkyle" target="_blank">helkyle</a>
     </div>
   </div>
 </footer>
