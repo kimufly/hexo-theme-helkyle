@@ -35,7 +35,8 @@ body
 
 .outer
   clearfix()
-  max-width: (column-width + gutter-width) * columns + gutter-width
+  // max-width: (column-width + gutter-width) * columns + gutter-width
+  max-width: 1024px
   margin: 0 auto
   padding: 0 gutter-width
 
@@ -78,6 +79,8 @@ if sidebar is left
   #main
     float: right
 
+#main
+    padding-top: header-height
 @import "_extend"
 @import "_partial/header"
 @import "_partial/article"

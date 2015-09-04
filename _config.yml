@@ -1,9 +1,9 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
-  Tags: /tags
-  About: /about
+  主页: /
+  归档: /archives
+  标签: /tags
+  关于: /about
 rss: /atom.xml
 
 # Content
