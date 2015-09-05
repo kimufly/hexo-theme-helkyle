@@ -15,7 +15,12 @@
     <!-- </div> -->
     <div id="header-inner" class="inner">
       <div id="logo-wrap">
-        <a href="<%- url_for() %>" id="logo" class='site-name'><%= config.title %></a>
+        <a href="<%- url_for() %>" id="logo" <% if (theme.subtitle){ %> title='<%= theme.subtitle %>' <% } %> >
+          <% if (theme.avatar_url) { %>
+            <img src="<%- theme.avatar_url %>" id="logo-img" >
+           <% } %>
+          <span class='site-name'><%= config.title %></span>
+        </a>
       </div>
       <nav id="main-nav">
         <a id="main-nav-toggle" class="nav-icon"></a>

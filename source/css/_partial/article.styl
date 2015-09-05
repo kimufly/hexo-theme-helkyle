@@ -1,9 +1,12 @@
 .article
   margin: block-margin 0
+  @media mq-md
+    margin: block-margin*0.5 0
 
 .article-inner
   @extend $block
   overflow: hidden
+  border-radius: 4px
 
 .article-meta
   clearfix()
@@ -26,7 +29,7 @@
   margin: 0 12px 1em
 
 .article-header
-  // padding: article-padding article-padding 0
+  padding: article-padding article-padding 0
 
 .article-title
   text-decoration: none
@@ -42,7 +45,7 @@
   // @extend $base-style
   clearfix()
   color: color-default
-  // padding: 0 article-padding
+  padding: 0 article-padding
   p, table
     line-height: line-height
     margin: line-height * 0.5 0
@@ -51,7 +54,7 @@
     font-weight: 300
   h1, h2, h3, h4, h5, h6
     line-height: line-height-title
-    margin: line-height-title 0
+    // margin: line-height-title 0
   a
     color: color-link
     text-decoration: none
@@ -80,27 +83,29 @@
     border-bottom: 1px solid color-border
     padding: 10px 0
   blockquote
+    border-left: 4px solid color-main
     font-family: font-sans
-    text-align: center
-    font-style: italic
-    margin: 4em 40px;
+    text-align: left
+    // font-style: italic
+    margin: 2em 20px;
+    padding-left: 20px;
     position: relative;
     
-    &::after, &::before
-      font-family: FontAwesome
-      position: absolute
-      color: #E8E8E8
-      font-size: 34px
-    &::before
-      top: -13px
-      content: "\f10d"
-      margin-right: 13px
-      right: 100%
-    &::after
-      top: 100%
-      content: "\f10e"
-      margin-left: 13px
-      left: 100%
+    // &::after, &::before
+    //   font-family: FontAwesome
+    //   position: absolute
+    //   color: #E8E8E8
+    //   font-size: 34px
+    // &::before
+    //   top: -13px
+    //   content: "\f10d"
+    //   margin-right: 13px
+    //   right: 100%
+    // &::after
+    //   top: 100%
+    //   content: "\f10e"
+    //   margin-left: 13px
+    //   left: 100%
     footer
       font-size: font-size
       margin: line-height 0
@@ -161,7 +166,7 @@
   line-height: line-height
   border-top: 1px solid color-border
   padding-top: line-height
-  // margin: 0 article-padding article-padding
+  margin: 0 article-padding article-padding
   a
     color: color-grey
     text-decoration: none

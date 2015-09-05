@@ -11,11 +11,11 @@
   @extend $block-caption
 
 .archives
-  column-gap: 10px
-  @media mq-tablet
-    column-count: 2
-  @media mq-normal
-    column-count: 3
+  // column-gap: 10px
+  // @media mq-tablet
+  //   column-count: 2
+  // @media mq-normal
+  //   column-count: 3
 
 .archive-article
   avoid-column-break()
@@ -37,11 +37,15 @@
     font-size: 1.6rem
 .archive-article-inner
   @extend $block
-  padding: 10px 10px
-  border: 1px solid color-grey
+  padding: 10px 30px 10px
+  // border: 1px solid color-grey
   border-radius: 5px
   margin-bottom: 15px
-
+  h3 
+    margin-bottom: 0
+.archive-posts-count {
+  margin-top: 50px;
+}
 // .archive-article-title
 //   text-decoration: none
 //   font-weight: 300
@@ -65,22 +69,22 @@
 #page-nav
   clearfix()
   margin: block-margin auto
-  background: #fff
-  box-shadow: 1px 2px 3px #ddd
-  border: 1px solid color-border
   border-radius: 3px
   text-align: center
   color: color-grey
   overflow: hidden
   a, span
-    padding: 10px 20px
+    padding: 10px 15px
     line-height: 1
     height: 2ex
+    transition: all 0.1s linear
   a
     color: color-grey
+    margin: 4px
+    border-radius: 2px
     text-decoration: none
     &:hover
-      background: color-grey
+      background: color-main
       color: #fff
   .prev
     float: left
@@ -91,7 +95,8 @@
     @media mq-mobile
       display: none
   .current
-    color: color-default
-    font-weight: bold
+    color: white
+    background: darken(color-main, 10%)
+    border-radius: 2px
   .space
     color: color-border
