@@ -6,9 +6,6 @@ menu:
   关于: /about
 rss: /atom.xml
 
-# Content
-excerpt_link: Read More
-
 # Miscellaneous
 favicon: /favicon.ico
 
@@ -17,14 +14,13 @@ version: 0.0.1
 #头像url
 avatar_url: http://7xlkda.com1.z0.glb.clouddn.com/avatar_helkyle.png
 
-# Duoshuo 
+# 多说
 duoshuo:
 	shortname: helkyle
-	share: 
-		weixin
-		weibo
 
+#阅读更多文字以及最大长度
 excerpt_link: 更多...
 excerpt_length: 600
 
-banner-url: 'https://unsplash.it/1400/600/?gravity=west&image=685'
+#打开fancybox
+fancybox: true

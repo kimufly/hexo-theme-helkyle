@@ -48,22 +48,21 @@ $logo-text
   color: color-link
   font-weight: 300
   
-#logo-wrap {
-  display: inline-block;
-  float: left;
-  margin-bottom: 0;
-  padding: 12px 30px 12px 0;
-  #logo-img {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    vertical-align: bottom;
-  }
-  .site-name {
-    font-size: 20px;
-    vertical-align: top;
-  }
-}
+#logo-wrap 
+  display: inline-block
+  float: left
+  margin-bottom: 0
+  padding: 12px 30px 12px 0
+  #logo-img 
+    height: 40px
+    width: 40px
+    border-radius: 50%
+    vertical-align: bottom
+  .site-name 
+    font-size: 20px
+    vertical-align: top
+    @media mq-mobile
+      display: none
 #logo
   @extend $logo-text
   font-size: logo-size
