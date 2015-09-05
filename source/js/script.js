@@ -1,4 +1,16 @@
 (function($){
+  //language-markup
+  var languageArr = ['javascript', 'css', 'html', 'scss', 'yml'];
+  $('.highlight').each(function() {
+      var $this = $(this),
+          className = $this.attr('class');
+      for(index in languageArr) {
+        if (className.indexOf(languageArr[index]) != -1) {
+          $this.attr('rel', languageArr[index].toUpperCase());
+          break;
+        }
+      }
+  });
   // Search
   var $searchWrap = $('#search-form-wrap'),
     isSearchAnim = false,

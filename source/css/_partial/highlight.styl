@@ -14,7 +14,7 @@ highlight-purple = #8959a8
 
 $code-block
   background: highlight-background
-  margin: 0 article-padding * -1
+  margin: 0 article-padding * -0.3
   padding: 15px article-padding
   border-radius: 4px
   // border-style: solid
@@ -42,6 +42,7 @@ $line-numbers
       text-shadow: none
       padding: 0
   .highlight
+    position: relative
     @extend $code-block
     pre
       border: none
@@ -67,6 +68,41 @@ $line-numbers
       padding-right: 20px
     .line
       height: font-size * line-height
+  .highlight[rel]
+    padding-top: 38px
+  .highlight[rel]:before {
+    content: attr(rel);
+    height: 28px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // background: #e18728;
+    // background-image: -webkit-gradient(from(#e8e7e8), to(#d3d2d3));
+    // background-image: -webkit-linear-gradient(#e8e7e8, #d3d2d3);
+    background-image: linear-gradient( #e8e7e8, #d3d2d3);
+    // background-image: -moz-linear-gradient( #e8e7e8, #d3d2d3);
+    // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#e8e7e8, endColorstr=#d3d2d3, GradientType=1);
+    
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    padding: 5px 65px;
+    text-indent: 15px;
+    float: left;
+  }
+  .highlight[rel]:after {
+    content: " ";
+    position: absolute;
+    border-radius: 50%;
+    background: #fc625d;
+    width: 12px; 
+    height: 12px;
+    top: 0;
+    left: 20px;
+    margin-top: 12px;
+    box-shadow: 20px 0px #fdbc40, 40px 0px  #35cd4b;
+  }
   .gist
     margin: 0 article-padding * -1
     border-style: solid
