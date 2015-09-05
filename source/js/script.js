@@ -1,15 +1,34 @@
 (function($){
   //language-markup
-  var languageArr = ['javascript', 'css', 'html', 'scss', 'yml'];
+  // .ruby 
+  // .xml 
+  // .html
+  // .css
+  // .python
+  // .perl
+  // .javascript .title
+  // .coffeescript
+  
+  // var languageArr = ['javascript', 'css', 'html', 'scss', 'yml'];
+
+  var key = 'highlight';
+
   $('.highlight').each(function() {
       var $this = $(this),
           className = $this.attr('class');
-      for(index in languageArr) {
-        if (className.indexOf(languageArr[index]) != -1) {
-          $this.attr('rel', languageArr[index].toUpperCase());
-          break;
-        }
+      var index = className.indexOf(key);
+      if ( index != -1) {
+        var language = className.slice(index + key.length );
+        // $this.attr('rel', language.toUpperCase());  
+        $this.wrap("<div class='highlight-wrap' rel=" + language.toUpperCase()+ "></div>");
       }
+      // for(index in languageArr) {
+        // $this.attr('rel', languageArr[index].toUpperCase());
+        // if (className.indexOf(languageArr[index]) != -1) {
+          // $this.attr('rel', languageArr[index].toUpperCase());
+          // break;
+        // }
+      // }
   });
   // Search
   var $searchWrap = $('#search-form-wrap'),

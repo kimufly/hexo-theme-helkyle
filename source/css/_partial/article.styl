@@ -45,7 +45,9 @@
   // @extend $base-style
   clearfix()
   color: color-default
-  padding: 0 article-padding
+  padding: 10px article-padding
+  @media mq-normal 
+    padding: 10px article-padding* 2
   p, table
     line-height: line-height
     margin: line-height * 0.5 0
@@ -87,8 +89,8 @@
     font-family: font-sans
     text-align: left
     // font-style: italic
-    margin: 2em 20px;
-    padding-left: 20px;
+    margin: 2em 0;
+    padding-left: 40px;
     position: relative;
     
     // &::after, &::before
@@ -167,15 +169,19 @@
   border-top: 1px solid color-border
   padding-top: line-height
   margin: 0 article-padding article-padding
+  @media mq-normal 
+    margin: 0 article-padding * 2 article-padding*0.8
   a
     color: color-grey
     text-decoration: none
     &:hover
       color: color-default
-
+.article-tag-list 
+  margin-left: 0
 .article-tag-list-item
   float: left
   margin-right: 10px
+  list-style: none
 
 .article-tag-list-link
     background-color: rgba(0,0,0,0.05)
