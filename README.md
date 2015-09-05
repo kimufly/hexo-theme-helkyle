@@ -42,5 +42,8 @@ excerpt_length: 600
 #打开fancybox
 fancybox: true
 
+#百度统计
+baidu_tongji: 3640c17e94957cdf51170baa0f8f14e1
+
 ```
 还在持续开发中~
