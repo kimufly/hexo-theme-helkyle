@@ -45,14 +45,28 @@ fancybox: true
 #百度统计
 baidu_tongji: 3640c17e94957cdf51170baa0f8f14e1
 
-#Social（暂时只有底部用到）
+#Social
 social:
-# key weibo/twitter/google/github/stackoverflow/rss/linkedin/facebook
+# key weibo/twitter/google/github/stackoverflow/linkedin/facebook/codepen
 # value url
 # e.g github: https://github.com/helkyle
   github: https://github.com/helkyle
-  rss: /atom.xml
   weibo: http://weibo.com/joueu
+  codepen: http://codepen.io/HelKyle/
+
+#Footer Social
+footer_social: 
+  enable: false
+
+#Article Social
+author_meta:
+  ##是否启用
+  enable: true
+  author_name: HelKyle
+  author_avatar: http://7xlkda.com1.z0.glb.clouddn.com/avatar_helkyle.png
+  ##是否打开社交logo
+  social: true
+  description: 我的第一个个人博客。
 
 ```
 还在持续开发中~
