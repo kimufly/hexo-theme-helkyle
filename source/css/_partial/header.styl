@@ -6,8 +6,18 @@
   background: #fff;
   width: 100%
   z-index: 200
+  transition: all 1s linear
+  .outer 
+    transition: all 0.5s ease-in-out
   
- 
+.disperse 
+  opacity: 0.6
+  @media mq-mobile
+    opacity: 1
+  &:hover
+    opacity: 1
+  .outer
+    max-width: 100%
 #header .mask {
   position: absolute;
   left:0;
@@ -97,7 +107,7 @@ $nav-link
   font-family: font-icon
   text-align: center
   font-size: font-size
-  width: font-size
+  // width: font-size
   height: font-size
   position: relative
   cursor: pointer

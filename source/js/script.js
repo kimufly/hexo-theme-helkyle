@@ -30,6 +30,19 @@
         // }
       // }
   });
+  
+  var revealHeight = 100;
+  var revealHeader = function(event) {
+    var scrollHeight = $(this).scrollTop();
+    if (scrollHeight >= revealHeight) {
+      $('#header').addClass('disperse');
+    }else {
+      $('#header').removeClass('disperse');
+    }
+  }
+  $(window).on('scroll', revealHeader);
+  revealHeader();
+
   // Search
   var $searchWrap = $('#search-form-wrap'),
     isSearchAnim = false,

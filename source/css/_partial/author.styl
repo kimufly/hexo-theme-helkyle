@@ -1,0 +1,35 @@
+.author__meta {
+	text-align: center;
+	.author__avatar {
+		border-radius: 50%;
+		border: 1px solid rgba(0,0,0,.1);;
+	}
+	.autorh__avatar-wrap {
+		position: relative;
+	}
+	.autorh__avatar-wrap::after,
+	.autorh__avatar-wrap::before {
+		position: absolute;
+	    content: '';
+	    z-index: 3;
+	    width: 50%;
+	    top: 50%;
+	    height: 0;
+	    border-top: 1px solid rgba(0,0,0,.1);
+	    border-bottom: 1px solid rgba(255,255,255,.2);
+    }
+    .autorh__avatar-wrap::before {
+    	margin-left: -51%;
+    }
+    .autorh__avatar-wrap::after {
+    	margin-left: 1%;
+    }
+	.author__desc::after {
+		content: " ";
+		display: block;
+		margin: 25px auto;
+		width: 60px;
+		height: 2px;
+		background-color: color-main;
+	}
+}

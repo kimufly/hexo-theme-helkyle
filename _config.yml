@@ -32,9 +32,21 @@ baidu_tongji: 3640c17e94957cdf51170baa0f8f14e1
 
 #Social
 social:
-# key weibo/twitter/google/github/stackoverflow/rss/linkedin/facebook
+# key weibo/twitter/google/github/stackoverflow/linkedin/facebook/codepen
 # value url
 # e.g github: https://github.com/helkyle
   github: https://github.com/helkyle
-  rss: /atom.xml
   weibo: http://weibo.com/joueu
+  codepen: http://codepen.io/HelKyle/
+
+#Footer Social
+footer_social: 
+  enable: false
+
+#Article Social
+author_meta:
+  enable: true
+  author_name: HelKyle
+  author_avatar: http://7xlkda.com1.z0.glb.clouddn.com/avatar_helkyle.png
+  social: true
+  description: 我是周晓楷，一名小小程序员。

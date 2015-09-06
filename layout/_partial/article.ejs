@@ -34,11 +34,27 @@
 
     </div>
     <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
+      <% if (theme.author_meta.enable && !index) { %>
+        <div class="author__meta">
+            <div class='autorh__avatar-wrap'>
+              <a href=""><img alt="<%= theme.author_meta.author_name %>" src="<%= theme.author_meta.author_avatar %>" class="author__avatar" height="90" width="90"></a>
+            </div>
+            <h3 class='author__name'><%= theme.author_meta.author_name %></h3>
+            <%if (theme.author_meta.social && theme.social){ %>
+              <%- partial('_partial/social') %>
+            <% } %>
+            <% if (theme.author_meta.description) { %>
+              <p class='author__desc'><%= theme.author_meta.description%></p>
+            <% } %>
+        </div>
       <% } %>
-      <%- partial('post/tag') %>
+      <div class='article-subfooter'>
+         <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
+        <% if (post.comments && config.disqus_shortname){ %>
+          <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
+        <% } %>
+        <%- partial('post/tag') %>
+      </div>
     </footer>
   </div>
   <% if (!index){ %>
