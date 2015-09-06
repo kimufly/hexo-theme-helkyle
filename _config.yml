@@ -4,6 +4,7 @@ menu:
   归档: /archives
   标签: /tags
   关于: /about
+  github: https://github.com/HelKyle/hexo-theme-helkyle
 rss: /atom.xml
 
 # Miscellaneous
@@ -28,3 +29,12 @@ fancybox: true
 
 #百度统计
 baidu_tongji: 3640c17e94957cdf51170baa0f8f14e1
+
+#Social
+social:
+# key weibo/twitter/google/github/stackoverflow/rss/linkedin/facebook
+# value url
+# e.g github: https://github.com/helkyle
+  github: https://github.com/helkyle
+  rss: /atom.xml
+  weibo: http://weibo.com/joueu

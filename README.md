@@ -45,5 +45,14 @@ fancybox: true
 #百度统计
 baidu_tongji: 3640c17e94957cdf51170baa0f8f14e1
 
+#Social（暂时只有底部用到）
+social:
+# key weibo/twitter/google/github/stackoverflow/rss/linkedin/facebook
+# value url
+# e.g github: https://github.com/helkyle
+  github: https://github.com/helkyle
+  rss: /atom.xml
+  weibo: http://weibo.com/joueu
+
 ```
 还在持续开发中~
