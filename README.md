@@ -26,8 +26,6 @@ rss: /atom.xml
 # Miscellaneous
 favicon: /favicon.ico
 
-version: 0.0.1
-
 #头像url
 avatar_url: http://7xlkda.com1.z0.glb.clouddn.com/avatar_helkyle.png
 
@@ -45,7 +43,7 @@ fancybox: true
 #百度统计
 baidu_tongji: 3640c17e94957cdf51170baa0f8f14e1
 
-#Social
+#Social（博客的社交信息）
 social:
 # key weibo/twitter/google/github/stackoverflow/linkedin/facebook/codepen
 # value url
@@ -60,13 +58,16 @@ footer_social:
 
 #Article Social
 author_meta:
-  ##是否启用
+  ##是否启用文章作者详细
   enable: true
   author_name: HelKyle
   author_avatar: http://7xlkda.com1.z0.glb.clouddn.com/avatar_helkyle.png
   ##是否打开社交logo
   social: true
   description: 我的第一个个人博客。
+
+#blog since
+since: 2014
 
 ```
 还在持续开发中~
