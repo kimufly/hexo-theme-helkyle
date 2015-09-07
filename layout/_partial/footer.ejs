@@ -4,7 +4,12 @@
   <% } %>
   <div class="outer">
     <div id="footer-info">
-      &copy;<%- config.author + "'s blog " %><%= date(new Date(), 'YYYY') %> • All rights reserved.<br>
+      &copy;<%- config.author + "'s blog " %>
+      <% var current = date(new Date(), 'YYYY');%>
+      <% if (theme.since && theme.since < current && theme.since > 0) { %>
+          <%- theme.since%> - 
+      <% } %>
+      <%= current %> • All rights reserved.<br>
       Published with <a href="http://hexo.io/" target="_blank">Hexo</a> Theme by <a href="https://github.com/HelKyle/hexo-theme-helkyle" target="_blank">helkyle</a>
     </div>
     <% if (theme.footer_social.enable) { %>
