@@ -81,6 +81,10 @@ if sidebar is left
 
 #main
     padding-top: header-height
+    @media mq-mobile
+      margin-left: - gutter-width
+      margin-right: - gutter-width
+    
 @import "_extend"
 @import "_partial/header"
 @import "_partial/article"

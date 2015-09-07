@@ -62,7 +62,7 @@ $logo-text
   display: inline-block
   float: left
   margin-bottom: 0
-  padding: 12px 30px 12px 0
+  padding: 12px 0 12px 0
   #logo-img 
     height: 40px
     width: 40px
@@ -111,7 +111,8 @@ $nav-link
   height: font-size
   position: relative
   cursor: pointer
-
+  @media mq-mobile
+    display: none
 .main-nav-link
   @extend $nav-link
   font-weight: 300

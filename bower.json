@@ -1,0 +1,14 @@
+ {
+   "name": "Hexo theme - helkyle",
+   "version": "0.0.1",
+   "homepage": "https://github.com/helkyle/hexo-theme-helkyle",
+   "authors": [
+     "helkyle <helkylefighting@gmail.com>"
+   ],
+   "description": "A lightweight theme for Hexo",
+   "repository": "https://github.com/helkyle/hexo-theme-helkyle",
+   "keywords": [
+     "hexo",
+     "theme",
+     "helkyle"
+   ],
