@@ -13,7 +13,7 @@ favicon: /favicon.ico
 version: 0.0.1
 
 #放在header上的logo，正方形图片最佳
-logo_img: http://7xlkda.com1.z0.glb.clouddn.com/avatar_helkyle.png
+logo: http://7xlkda.com1.z0.glb.clouddn.com/avatar_helkyle.png
 
 # 多说
 duoshuo:

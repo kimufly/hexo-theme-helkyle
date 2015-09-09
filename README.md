@@ -3,17 +3,15 @@
 
 我使用的hexo主题 [helkyle.com](http://helkyle.com)
 
-## Features
-### Fancybox
+##Features
+###Fancybox
 
 你可以使用markdown语法，或者fancybox插件的语法让你的图片支持fancybox。
 ```
 ![img caption](img url)
 ```
-### 配置文章摘要    
-如果需要，你可以在_post源文件顶部配置`summary`属性。
 
-## Configuration
+##Configuration
 ``` yml
 # Header
 menu:
@@ -26,8 +24,8 @@ rss: /atom.xml
 # Miscellaneous
 favicon: /favicon.ico
 
-#放在header上的logo，正方形图片最佳
-logo_img: http://7xlkda.com1.z0.glb.clouddn.com/avatar_helkyle.png
+#头像url
+avatar_url: http://7xlkda.com1.z0.glb.clouddn.com/avatar_helkyle.png
 
 # 多说
 duoshuo:
