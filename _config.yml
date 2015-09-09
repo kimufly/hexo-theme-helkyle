@@ -12,8 +12,8 @@ favicon: /favicon.ico
 
 version: 0.0.1
 
-#头像url
-avatar_url: http://7xlkda.com1.z0.glb.clouddn.com/avatar_helkyle.png
+#放在header上的logo，正方形图片最佳
+logo: http://7xlkda.com1.z0.glb.clouddn.com/avatar_helkyle.png
 
 # 多说
 duoshuo:
@@ -47,7 +47,9 @@ footer_social:
 author_meta:
   enable: true
   author_name: HelKyle
-  author_avatar: http://7xlkda.com1.z0.glb.clouddn.com/avatar_helkyle.png
+  # author_avatar: http://7xlkda.com1.z0.glb.clouddn.com/avatar_helkyle.png
+  # 文章底部作者头像，非正方形也可以
+  author_avatar: http://7xlkda.com1.z0.glb.clouddn.com/utah-thumb.gif
   social: true
   description: 我是周晓楷，一名小小程序员。
 

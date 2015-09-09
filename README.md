@@ -9,8 +9,6 @@
 你可以使用markdown语法，或者fancybox插件的语法让你的图片支持fancybox。
 ```
 ![img caption](img url)
-
-{% fancybox img_url [img_thumbnail] [img_caption] %}
 ```
 
 ##Configuration
@@ -61,7 +59,8 @@ author_meta:
   ##是否启用文章作者详细
   enable: true
   author_name: HelKyle
-  author_avatar: http://7xlkda.com1.z0.glb.clouddn.com/avatar_helkyle.png
+  # 文章底部作者头像，非正方形也可以
+  author_avatar: http://7xlkda.com1.z0.glb.clouddn.com/utah-thumb.gif
   ##是否打开社交logo
   social: true
   description: 我的第一个个人博客。
@@ -71,7 +70,7 @@ since: 2014
 
 ```
 
-##Todo
+## Todo
 - [ ] 移动端兼容    
 - [ ] 移动端导航栏重写
 - [ ] 底部美化
