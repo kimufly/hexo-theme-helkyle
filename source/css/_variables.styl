@@ -2,7 +2,12 @@
 support-for-ie = false
 vendor-prefixes = webkit moz ms official
 
-color-main = #57A3E8
+// #57A3E8
+if hexo-config('theme-color') is 'black'
+   color-main = #404041
+else
+   color-main = #57A3E8
+   
 // Colors
 color-default = #555
 color-grey = #a4a8b3
